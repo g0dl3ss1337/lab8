@@ -1,10 +1,13 @@
-﻿namespace Task4;
+﻿using System.Text;
+
+namespace Task4;
 
 class Program
 {
     static void Main()
     {
-        
+        Console.OutputEncoding = Encoding.UTF8;
+
         IDataTemplate csvData = new CsvDataTemplate();
         IDataTemplate xmlData = new XmlDataTemplate();
         IDataTemplate jsonData = new JsonDataTemplate();
